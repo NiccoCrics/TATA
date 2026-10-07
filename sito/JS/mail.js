@@ -1,24 +1,3 @@
-/* Se il link mailto: non apre nessuna app di posta, porta alla pagina del modulo */
-(() => {
-  const FALLBACK_URL = 'mail.html';
-  if (location.pathname.endsWith('mail.html')) return;   // non serve nella pagina del modulo
-
-  document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
-    a.addEventListener('click', () => {
-      let opened = false;
-      const mark = () => { opened = true; };
-      window.addEventListener('blur', mark, { once: true });
-      document.addEventListener('visibilitychange', mark, { once: true });
-
-      setTimeout(() => {
-        window.removeEventListener('blur', mark);
-        document.removeEventListener('visibilitychange', mark);
-        if (!opened) location.href = FALLBACK_URL;
-      }, 2000);
-    });
-  });
-})();
-
 const FORM_ENDPOINT = "https://formspree.io/f/mdeaeawy"; // ← URL del servizio che invia l'email (Formspree, Web3Forms…)
 const HOST_EMAIL    = "casaodello.bordighera@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
 
