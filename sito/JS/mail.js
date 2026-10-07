@@ -1,5 +1,5 @@
 const FORM_ENDPOINT = "https://formspree.io/f/mdeaeawy"; // ← URL del servizio che invia l'email (Formspree, Web3Forms…)
-const HOST_EMAIL    = "casaodello.bordighera@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
+const HOST_EMAIL    = "criccaniccolo@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('status');
