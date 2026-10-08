@@ -1,5 +1,5 @@
-const FORM_ENDPOINT = "https://formspree.io/f/mdeaeawy"; // ← URL del servizio che invia l'email (Formspree, Web3Forms…)
-const HOST_EMAIL    = "criccaniccolo@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
+const FORM_ENDPOINT = "https://formspree.io/f/mwlvlyoo"; // ← URL del servizio che invia l'email (Formspree, Web3Forms…)
+const HOST_EMAIL    = "federicatolu@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('status');
@@ -23,7 +23,7 @@ function validate(){
   if (!form.nome.value.trim()) { setErr('nome','Scrivi il tuo nome.'); ok = false; }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.value.trim())) { setErr('email','Inserisci un indirizzo email valido.'); ok = false; }
   if (form.arrivo.value && form.partenza.value && form.partenza.value <= form.arrivo.value) { setErr('partenza','La partenza deve essere dopo l\'arrivo.'); ok = false; }
-  if (form.messaggio.value.trim().length < 10) { setErr('messaggio','Scrivi almeno una breve frase.'); ok = false; }
+  if (form.messaggio.value.trim().length < 1) { setErr('messaggio','Scrivi almeno una breve frase.'); ok = false; }
   if (!document.getElementById('privacy').checked) { setErr('privacy','Serve il tuo consenso per inviare il messaggio.'); ok = false; }
   if (!ok) form.querySelector('[aria-invalid="true"]')?.focus();
   return ok;

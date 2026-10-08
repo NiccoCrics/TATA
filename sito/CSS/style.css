@@ -27,7 +27,7 @@ a{color:inherit}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem;width:100%}
 section{padding:5.5rem 0}
 section.alt{background:var(--mist)}
-h1,h2{font-family:var(--serif);font-weight:600;line-height:1.1}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1}
 h2{font-size:clamp(1.8rem,4vw,3rem);margin-bottom:1rem}
 .lead{max-width:60ch;color:var(--ink-soft);margin-bottom:2.5rem}
 
