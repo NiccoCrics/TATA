@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Casa Odello · Bed &amp; Breakfast</title>
+  <title>Casa Odello · Bed & Breakfast</title>
   <meta name="description" content="Bed &amp; Breakfast con suite luminose, colazione fatta in casa e accoglienza familiare.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -67,16 +68,17 @@
     <!-- ingresso, CAMERA, BAGNO -->
     <section id="suite" class="alt">
       <div class="wrap">
-        <div class="spaces">
-
+        <h2>La Suite</h2>
+        <p class="lead">Tre stanze private con tutto il necessario.</p>
+        <div class="spaces">  
           <!-- ingresso -->
           <article class="space">
             <h2>Ingresso</h2>
             <p class="lead">Semplice ma importante, qui potete sistemare le vostre cose dopo una lunga giornata, riporre le scarpe e le giacche proprio come a casa vostra.</p>
             <div class="space-photos">
-              <figure class="ph"><img src="" alt="ingresso"></figure>
-              <figure class="ph"><img src="" alt="ingresso, dettaglio"></figure>
-              <figure class="ph"><img src="" alt="ingresso, ingresso"></figure>
+              <figure class="ph"><img src="FOTO/ingresso/ingresso1.jpeg" alt="ingresso"></figure>
+              <figure class="ph"><img src="FOTO/ingresso/ingresso2.jpeg" alt="ingresso, dettaglio"></figure>
+              <figure class="ph"><img src="FOTO/ingresso/ingresso3.jpeg" alt="ingresso, ingresso"></figure>
             </div>
           </article>
 
@@ -85,29 +87,25 @@
             <h2>Camera</h2>
             <p class="lead">Spaziosa, accogliente, arredata con tutto il necessario. Dall'ampio armadio in legno ai comodini con bajour, finestra panoramica con doppia tenda, tavolino, mensole, televisore e cassaforte.</p>
             <div class="space-photos">
-              <figure class="ph"><img src="" alt="Il letto della camera"></figure>
-              <figure class="ph"><img src="" alt="La finestra panoramica"></figure>
-              <figure class="ph"><img src="" alt="Armadio e mensole"></figure>
+              <figure class="ph"><img src="FOTO/camera/camera1.jpeg" alt="Il letto della camera"></figure>
+              <figure class="ph"><img src="FOTO/camera/camera2.jpeg" alt="La finestra panoramica"></figure>
+              <figure class="ph"><img src="FOTO/camera/camera3.jpeg" alt="Armadio e mensole"></figure>
             </div>
           </article>
 
           <!-- BAGNO -->
           <article class="space">
             <h2>Bagno</h2>
-            <p class="lead">Luminoso e intimo, attrezzato a dovere, asciugamani di servizio, phon e doccia capiente.</p>
+            <p class="lead">Luminoso e intimo, attrezzato a dovere, asciugamani di servizio, phon, doccia capiente, lavatrice e asciugatrice ad uso personale.</p>
             <div class="space-photos">
-              <figure class="ph"><img src="" alt="Il bagno"></figure>
-              <figure class="ph"><img src="" alt="La doccia"></figure>
-              <figure class="ph"><img src="" alt="Lavabo e specchio"></figure>
+              <figure class="ph"><img src="FOTO/bagno/bagno1.jpeg" alt="Il bagno"></figure>
+              <figure class="ph"><img src="FOTO/bagno/bagno2.jpeg" alt="La doccia"></figure>
+              <figure class="ph"><img src="FOTO/bagno/bagno3.jpeg" alt="Lavabo e specchio"></figure>
             </div>
           </article>
 
         </div>
       </div>
-    </section>
-
-    <section >
-
     </section>
 
     <!-- SERVIZI -->
@@ -116,12 +114,12 @@
         <h2>Cosa è incluso</h2>
         <p class="lead">Poche cose, fatte bene.</p>
         <ul class="services">
-          <li><strong>Asciugatrice e Lavatrice</strong><span>Asciugatrice e lavatrice personali.</span></li>
-          <li><strong>Colazione fatta in casa</strong><span>Torte, marmellate, pane fresco, frutta di stagione e opzioni senza glutine.</span></li>
+          <li><strong>Elettrodomestici</strong><span>Asciugatrice e lavatrice ad uso personale interni al B&B.</span></li>
+          <li><strong>Servizi generali</strong><span>Impianto aria condizionata e termosifoni interno, ascensore, ingresso privato e insonorizzazione.</span></li>
+          <li><strong>Self check-in</strong><span>Arrivo flessibile dalle 15:00 alle 19:00, anche più tardi se ci avvisate.</span></li>
+          <li><strong>Cucina</strong><span>Set per la preparazione di tè e caffè, bollitore, macchina del caffè e frigorifero.</span></li>
           <li><strong>Wi-Fi veloce</strong><span>In tutte le stanze e negli spazi comuni.</span></li>
           <li><strong>Parcheggio privato</strong><span>Posti auto nel cortile, su richiesta.</span></li>
-          <li><strong>Biciclette</strong><span>Due bici a disposizione degli ospiti.</span></li>
-          <li><strong>Self check-in</strong><span>Arrivo flessibile dalle 15:00 alle 19:00, anche più tardi se ci avvisate.</span></li>
         </ul>
       </div>
     </section>
@@ -137,7 +135,7 @@
           <button type="button" class="gs-btn gs-next" aria-label="Foto successive"><i class="fa-solid fa-angle-right"></i></button>
         </div>
         <div class="gallery-actions">
-          <button type="button" class="btn js-booking" id="gallery-toggle" aria-expanded="false">Scorri tutta la galleria</button>
+          <button type="button" class="btn" id="gallery-toggle" aria-expanded="false">Scorri tutta la galleria</button>
         </div>
       </div>
     </section>
@@ -162,7 +160,7 @@
             <dt>Telefono</dt>
             <dd><a href="tel:+393514547350">+39 351 454 7350</a></dd>
             <dt>Email</dt>
-            <dd><a href="mail.html">casaodello.bordighera@gmail.com</a></dd>
+            <dd><a href="mailto:casaodello.bordighera@gmail.com">casaodello.bordighera@gmail.com</a></dd>
           </dl>
         </div>
         <div>
@@ -177,7 +175,7 @@
           </dl>
         </div>
         <iframe class="map" src="https://www.google.com/maps?q=Via+Vittorio+Veneto+9,+Bordighera&output=embed" 
-        title="Mappa" loading="lazy" style="width: 200%; height: 450px; border: 0;"></iframe>
+        title="Mappa" loading="lazy" style="width: 100%; height: 450px; border: 0;"></iframe>
       </div>
     </section>
   </main>
@@ -197,6 +195,7 @@
     <button class="lb-next" aria-label="Foto successiva"><i class="fa-solid fa-angle-right"></i></button>
   </div>
 
+  <script src="FOTO/galleria/elenco.js"></script>
   <script src="JS/script.js"></script>
 
 </body>
