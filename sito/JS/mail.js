@@ -1,5 +1,5 @@
-const FORM_ENDPOINT = "https://formspree.io/f/mwlvlyoo"; // ← URL del servizio che invia l'email (Formspree, Web3Forms…)
-const HOST_EMAIL    = "federicatolu@gmail.com";// ← usata se FORM_ENDPOINT è vuoto
+const FORM_ENDPOINT = "https://formspree.io/f/mdeaeawy"; //https://formspree.io/f/mwlvlyoo
+const HOST_EMAIL    = "criccaniccolo@gmail.com"; //federicatolu@gmail.com
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('status');
@@ -29,7 +29,11 @@ function validate(){
   return ok;
 }
 
-const show = (type, msg) => { status.className = 'full status ' + type; status.textContent = msg; };
+const show = (type, msg) => {
+  status.className = 'status ' + type;
+  status.textContent = msg;
+  status.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+};
 
 function showWebmail(to, subject, body){
   const t = encodeURIComponent(to), s = encodeURIComponent(subject), b = encodeURIComponent(body);
@@ -53,7 +57,7 @@ function showWebmail(to, subject, body){
 
 form.addEventListener('submit', async e => {
   e.preventDefault();
-  status.className = 'full status'; choices.hidden = true;
+  status.className = 'status'; choices.hidden = true;
   if (!validate() || form.sito.value) return;
 
   const data = {
@@ -73,6 +77,7 @@ form.addEventListener('submit', async e => {
   }
 
   btn.disabled = true; btn.textContent = 'Invio in corso…';
+  show('info', 'Invio in corso…');
   try {
     const res = await fetch(FORM_ENDPOINT, {
       method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
